@@ -223,7 +223,7 @@ db.ventas.aggregate([
     }
 ])
 
----------------Ejercicio 1 Entrega--------------------
+---------------Ejercicio 1--------------------
 db.productos.aggregate([
   {$addFields:{
 cantidadValoraciones:{$size:"$valoraciones"},
@@ -244,7 +244,7 @@ promedioValoraciones:1
 
 ])
 
----------------Ejercicio 2 Entrega--------------------
+---------------Ejercicio 2 --------------------
 Crear un pipeline que obtenga las ventas totales por mes, indicando también el producto más vendido de cada mes.
 
 db.ventas.aggregate([
@@ -261,4 +261,4 @@ cantidadVendida:{$sum:"$cantidad"}
   {$sort:{cantidadVendida:-1}},
 {$limit:1}
 ])
----------------Ejercicio 3 Entrega--------------------
+---------------Ejercicio 3 --------------------
