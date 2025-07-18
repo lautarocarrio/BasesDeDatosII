@@ -12,5 +12,5 @@ RETURN h.nombre,count(e) AS cant_endosadas
 ORDER BY cant_endosadas DESC;
 
 MATCH (h:Habilidad)
-WHERE NOT (:Usuario {nombre: "rapha123"})-[:ENDOSA]->(h) // habilidades que rapha123 no endoso
+WHERE NOT (:Usuario {nombre: "rapha123"})-[:ENDOSA]->(h) 
 RETURN h.nombre AS habilidades_no_endosadas;
