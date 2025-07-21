@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "68797a8ba664d6168653c611",
+    "numero": "101",
+    "tipo": "Suite"
+  },
+  {
+    "_id": "68797a8ba664d6168653c612",
+    "numero": "102",
+    "tipo": "Suite"
+  },
+  {
+    "_id": "68797a8ba664d6168653c613",
+    "numero": "103",
+    "tipo": "Suite"
+  },
+  {
+    "_id": "68797a8ba664d6168653c614",
+    "numero": "201",
+    "tipo": "Doble"
+  },
+  {
+    "_id": "68797a8ba664d6168653c615",
+    "numero": "202",
+    "tipo": "Doble"
+  },
+  {
+    "_id": "68797a8ba664d6168653c616",
+    "numero": "203",
+    "tipo": "Doble"
+  },
+  {
+    "_id": "68797a8ba664d6168653c617",
+    "numero": "301",
+    "tipo": "Individual"
+  },
+  {
+    "_id": "68797a8ba664d6168653c618",
+    "numero": "302",
+    "tipo": "Individual"
+  },
+  {
+    "_id": "68797a8ba664d6168653c619",
+    "numero": "303",
+    "tipo": "Individual"
+  }
+]

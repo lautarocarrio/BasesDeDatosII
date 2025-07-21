@@ -1,0 +1,7 @@
+db.empleados.insertMany([
+    {Nombre: "Gabriel Garcia", Edad:25, puesto:"DevOPS"},
+    {Nombre: "Fernando Fernandez", Edad:30, Puesto:"Fullstack Developer"},
+    {Nombre: "Ramiro Ramirez", Edad:28, Puesto:"Pasante"}
+]);
+
+

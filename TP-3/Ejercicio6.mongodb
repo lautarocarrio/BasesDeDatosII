@@ -1,0 +1,19 @@
+use ('tiendaOnline');
+
+db.ventas.aggregate([
+    {
+        $project: {
+          mes: {$month: "$fecha"},
+          total: 1 
+        }
+    },
+    {
+        $group: {
+          _id: "$mes",
+          totalPorMes: {$sum: "$total"}
+        }
+    },
+    {
+        $sort: {totalPorMes: -1}  
+    }
+])

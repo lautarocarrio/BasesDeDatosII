@@ -1,0 +1,4 @@
+En la replicacion hay un nodo primarios y muchos secundarios en los que se replican los datos de los primarios. Cuando falla el nodo primario un nodo secundario pasa a ser primario asi la base de datos puede seguir funcionando sin interrupciones. Al haber tantas copias asegura que no se pierdan los datos en casos fatales de algun nodo.
+
+El Sharding es la distribucion de datos horizontalmente para escalabilidad, esto quiere decir que los datos se distribuyen en muchos servidores para que se pueda manejar un gran volumen de consultas y datos sin que se sobrecargue un servidor individual. 
+Mejora el rendimiento y facilita la gestion de datos.

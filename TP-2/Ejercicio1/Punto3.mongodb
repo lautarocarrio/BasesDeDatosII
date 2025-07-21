@@ -1,0 +1,4 @@
+db.empleados.updateOne(
+    { Nombre: "Gabriel Garcia"},
+    { $set: { Edad: 27} }
+  )

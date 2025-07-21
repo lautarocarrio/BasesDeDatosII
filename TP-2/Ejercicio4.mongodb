@@ -1,0 +1,11 @@
+db.empleados.updateMany(
+    {}, 
+    {$set: 
+        {direccion: 
+            {calle: "11 de Abril 461",
+                ciudad: "Bahia Blanca",
+                codigo_postal: "8000"
+            }
+        }
+    }
+)

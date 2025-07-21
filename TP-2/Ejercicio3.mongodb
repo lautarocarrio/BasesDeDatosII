@@ -1,0 +1,5 @@
+db.empleados.find({}, {_id: 0, Nombre: 1, Puesto: 1})
+
+/* la query es {} vacio hace que devuelva todo el documento. 
+Y {_id: 0, Nombre: 1, Puesto: 1} es la proyeccion 
+que es lo que va a mostrar.*/

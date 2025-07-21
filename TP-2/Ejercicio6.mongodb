@@ -1,0 +1,6 @@
+db.clientes.insertOne({
+    nombre: "Lucia",
+    apellido: "Lopez",
+})
+
+db.clientes.createIndex({ apellido: 1, nombre: 1 })

@@ -1,0 +1,22 @@
+{
+  "name": "tp-final-bdd",
+  "version": "1.0.0",
+  "description": "Sistema de gestión hotelera",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:habitaciones": "node src/Data/habitaciones.seed.js",
+    "seed:reservas": "node src/Data/reservas.seed.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+

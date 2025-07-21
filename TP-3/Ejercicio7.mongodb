@@ -1,0 +1,51 @@
+use ('tiendaOnline');
+
+db.productos.aggregate([
+    {
+        $project: {
+            nombre: 1,
+            precio: 1,
+            grupoPrecios: {
+                $switch:{
+                    branches: [
+                        {case: {$lt: ["$precio", 100]}, then: "Economico"},
+                        {case: {$lte: ["$precio", 500]}, then: "Estandar"}
+                    ],
+                    default: "Premium"
+                }
+            }
+        }
+    },
+    {
+        $group: {
+            _id: "$grupoPrecios",
+            cantidad: {$sum: 1},
+            productos: {$push: "$nombre"}
+        }
+    }
+])
+
+db.ventas.aggregate([
+    {
+        $project: {
+            cliente: "$cliente.nombre",
+            total: 1,
+            grupoVentas:{
+                $switch: {
+                    branches: [
+                        {case: {$lt: ["$total", 200]}, then: "Pequeña"},
+                        {case: {$lte: ["$total", 800]}, then: "Mediana"}
+                    ],
+                    default: "Grande"
+                }
+            }
+        }
+    },
+    {
+        $group:{
+            _id: "$grupoVentas",
+            cantidad: {$sum: 1},
+            totalVentas: {$sum: "$total"}
+        }
+    }
+])

@@ -1,0 +1,8 @@
+db.ventas.aggregate([
+    { $group: {
+        _id: "$producto", 
+        totalVentas: { $sum: { $multiply: ["$cantidad", "$precio_unitario"] } }
+      }
+    }
+  ])
+  

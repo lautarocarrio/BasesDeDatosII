@@ -1,0 +1,26 @@
+db.cursos.insertMany([
+  { _id: 1, nombre: "Programacion 3", profesor: "Ramoscelli" },
+  { _id: 2, nombre: "Base de datos 2", profesor: "Ramoscelli" },
+  { _id: 3, nombre: "Ingles 2", profesor: "Cortalezzi" }
+])
+
+db.alumnos.insertMany([
+    {Nombre: "Gabriel Garcia", id_curso: [2, 3] },
+    {Nombre: "Fernando Fernandez", id_curso: [ 2] },
+    {Nombre: "Ramiro Ramirez", id_curso: [ 1, 3]}
+])
+
+db.alumnos.updateOne([
+    {Nombre: "Gabriel Garcia"},
+    {$set: {id_curso: [1, 2 ,3]}}
+])
+
+db.alumnos.updateOne([
+    {Nombre: "Fernando Fernandez"},
+    {$set: {id_curso: [2 ,3]}}
+])
+
+db.alumnos.updateOne([
+    {Nombre: "Ramiro Ramirez"},
+    {$set: {id_curso: [ 1]}}
+])
