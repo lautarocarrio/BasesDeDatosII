@@ -46,17 +46,17 @@ Plataforma para gestionar habitaciones, huéspedes y reservas de un hotel.
 - NODE_ENV=development
 
 ## Algunas consultas utiles:
--GET http://localhost:3000/api/habitaciones //Obtener todas las habitaciones
--GET http://localhost:3000/api/habitaciones/tipo/Suite //Obtener habitacion por tipo de habitacion
--GET http://localhost:3000/api/habitaciones/numero/103 //Obtener habitacion por numero
--GET http://localhost:3000/api/habitaciones/disponibles //Consultar habitaciones disponibles
+- GET http://localhost:3000/api/habitaciones //Obtener todas las habitaciones
+- GET http://localhost:3000/api/habitaciones/tipo/Suite //Obtener habitacion por tipo de habitacion
+- GET http://localhost:3000/api/habitaciones/numero/103 //Obtener habitacion por numero
+- GET http://localhost:3000/api/habitaciones/disponibles //Consultar habitaciones disponibles
 
--GET http://localhost:3000/api/reservas //Consultar todas las reservas
--GET http://localhost:3000/api/reservas/reporte/ocupacion/:mes/:anio //Consultar ocupacion por mes y año
--GET http://localhost:3000/api/reservas/huesped/:email //Consultar por email de huesped
--GET http://localhost:3000/api/reservas/estado/:estado //Consultar por estado (pendiente, confirmada)
--PUT http://localhost:3000/api/reservas/:id //Modificar una reserva por ID
--DELETE http://localhost:3000/api/reservas/:id //Eliminar reserva
--PUT http://localhost:3000/api/reservas/:id/cancelar 
--PUT http://localhost:3000/api/reservas/:id/check-in
+- GET http://localhost:3000/api/reservas //Consultar todas las reservas
+- GET http://localhost:3000/api/reservas/reporte/ocupacion/:mes/:anio //Consultar ocupacion por mes y año
+- GET http://localhost:3000/api/reservas/huesped/:email //Consultar por email de huesped
+- GET http://localhost:3000/api/reservas/estado/:estado //Consultar por estado (pendiente, confirmada)
+- PUT http://localhost:3000/api/reservas/:id //Modificar una reserva por ID
+- DELETE http://localhost:3000/api/reservas/:id //Eliminar reserva
+- PUT http://localhost:3000/api/reservas/:id/cancelar 
+- PUT http://localhost:3000/api/reservas/:id/check-in
 
