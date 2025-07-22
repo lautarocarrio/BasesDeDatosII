@@ -57,6 +57,5 @@ Plataforma para gestionar habitaciones, huéspedes y reservas de un hotel.
 - GET http://localhost:3000/api/reservas/estado/:estado //Consultar por estado (pendiente, confirmada)
 - PUT http://localhost:3000/api/reservas/:id //Modificar una reserva por ID
 - DELETE http://localhost:3000/api/reservas/:id //Eliminar reserva
-- PUT http://localhost:3000/api/reservas/:id/cancelar 
 - PUT http://localhost:3000/api/reservas/:id/check-in
 
